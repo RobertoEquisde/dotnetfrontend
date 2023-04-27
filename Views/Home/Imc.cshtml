@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+  <div class="container">
+      <h1>Calculadora de IMC</h1>
+    <p>
+       altura
+        <input name="txtAltura">
+        m
+    </p>
+    <p>
+        Peso:
+        <input name="txtPeso">
+        kg
+    </p>
+    <p><input type="submit" value="calcular IMC"/></p>
+    <p>Su IMC:</p>
+    <p> <input name="imc" id="imc" value="@ViewData["imc"]" ></p>
+    <table>
+        <tr>
+            <th>IMC</th>
+            <th>Estado de peso</th>
+        </tr>
+        <tr>
+            <td>Menor a 18.5</td>
+            <td>Bajo de peso</td>
+        </tr>
+        <tr>
+            <td>18.5-24.9</td>
+            <td>Peso normal</td>
+        </tr>
+            <tr>
+            <td>25.0-29.9</td>
+            <td>Peso normal</td>
+        </tr>
+            <tr>
+            <td>30.0 y superior </td>
+            <td>obesidad</td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>

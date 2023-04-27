@@ -1,0 +1,79 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+h1 {
+  color: rgb(9, 172, 226);
+}
+label {
+  display: inline-block;
+  width: 80px;
+}
+input[type="text"] {
+  width: 50px;
+}
+#calculate {
+  background-color: white;
+  border: 2px solid rgb(9, 172, 226);
+  border-radius: 10px;
+  color: rgb(9, 172, 226);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#calculate:hover {
+  background-color: rgb(9, 172, 226);
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+th {
+  background-color: darkblue;
+  color: white;
+}
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: darkblue;
+  color: white;
+}
+tr:nth-child(even) td:nth-child(even) {
+  background-color: white;
+  color: darkblue;
+}
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: rgb(31, 168, 214);
+  color: white;
+}
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: white;
+  color: rgb(31, 168, 214);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
